@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@halvaradop/tailwindcss-utilities": "^0.0.3",
+    "@halvaradop/ts-utility-types": "^0.0.4",
     "@types/node": "^20.14.10",
     "typescript": "^5.5.3"
   }
