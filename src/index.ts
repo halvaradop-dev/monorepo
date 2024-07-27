@@ -23,3 +23,5 @@ const config: StoreConfig = {
 }
 
 console.log(config)
+
+const dp = Array.from<number>({ length: 5 }).map(() => Array.from<number>({ length: 5 }))
