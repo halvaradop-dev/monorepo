@@ -1,7 +1,8 @@
 {
   "name": "@halvaradop/core",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@halvaradop/auth-init": "^0.0.3"
+    "@halvaradop/auth-init": "^0.0.3",
+    "@halvaradop/building-actions": "1.0.0"
   }
 }
