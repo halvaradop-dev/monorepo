@@ -1,4 +1,4 @@
-import { ArgsFunction, Prettify } from "@halvaradop/ts-utility-types"
+import type { ArgsFunction, Prettify } from "@halvaradop/ts-utility-types"
 
 export const executeAsync = (fun: ArgsFunction) => {
     // EXECUTE
