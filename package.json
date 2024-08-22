@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test:workspaces": "vitest",
-    "test": "npm workspaces run test:workspaces",
+    "test": "vitest",
     "version": "tsc && git add . && git commit -m \"chore(release): new version $npm_package_version published on npm\""
   },
   "keywords": [],
