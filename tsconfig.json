@@ -2,8 +2,10 @@
   "display": "Node 20",
   "_version": "20.1.0",
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
     "lib": ["es2023"],
-    "module": "ES6",
+    "module": "CommonJS",
     "target": "es2022",
     "outDir": "dist",
     "strict": true,

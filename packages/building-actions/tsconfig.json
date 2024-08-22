@@ -4,7 +4,7 @@
   "compilerOptions": {
     "lib": ["es2023"],
     "module": "ES6",
-    "target": "es2022",
+    "target": "ES5",
     "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
@@ -12,6 +12,7 @@
     "moduleResolution": "Node",
     "declaration": true,
     "declarationMap": false,
+    "resolveJsonModule": true,
     "declarationDir": "dist",
   },
   "exclude": ["node_modules", "dist"]
