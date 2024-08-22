@@ -5,7 +5,7 @@ export const executeAsync = (fun: ArgsFunction) => {
 }
 
 export interface Store {
-    storage: any[],
+    storage: any[]
     index: number
 }
 
@@ -18,7 +18,7 @@ export type StoreConfig = Prettify<Store & Config>
 const config: StoreConfig = {
     index: 0,
     plugins: [],
-    storage: []
+    storage: [],
 }
 
 console.log(config)
