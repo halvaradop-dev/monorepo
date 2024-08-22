@@ -1,6 +1,7 @@
 {
   "name": "test",
-  "version": "0.4.0",
+  "version": "0.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -9,7 +10,6 @@
     "version": "tsc && git add . && git commit -m \"chore(release): new version $npm_package_version published on npm\"",
     "format": "npx prettier --write .",
     "format:check": "npx prettier --check .",
-    "build": "tsc"
   },
   "keywords": [],
   "author": "",
