@@ -1,19 +1,22 @@
 {
-  "name": "@halvaradop/core",
+  "name": "@halvaradop/repo-core",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "dev": "node dist/index.js",
-    "build": "tsc"
+    "dev": "tsc -w",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@halvaradop/auth-init": "^0.0.3",
-    "@halvaradop/building-actions": "1.0.0"
-  }
+    "@halvaradop/auth-init": "^0.0.3"
+  },
+  "files": [
+    "dist"
+  ]
 }

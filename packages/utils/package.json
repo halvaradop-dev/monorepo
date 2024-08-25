@@ -1,12 +1,13 @@
 {
-  "name": "@halvaradop/building-actions",
+  "name": "@halvaradop/repo-utils",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "dev": "node dist/index.js",
-    "build": "tsc"
+    "dev": "tsc -w",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
   "description": "",
   "devDependencies": {
     "@halvaradop/shortify-cli": "^0.0.3"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

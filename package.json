@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "repo",
   "version": "0.0.0",
   "private": true,
   "description": "",
@@ -7,7 +7,6 @@
   "type": "module",
   "scripts": {
     "test": "vitest",
-    "version": "tsc && git add . && git commit -m \"chore(release): new version $npm_package_version published on npm\"",
     "format": "npx prettier --write .",
     "format:check": "npx prettier --check .",
     "build": "npm run build --workspaces"
@@ -17,7 +16,6 @@
   "license": "ISC",
   "devDependencies": {
     "@halvaradop/tailwindcss-utilities": "^0.2.2",
-    "@halvaradop/ts-utility-types": "^0.6.0",
     "@types/node": "^20.14.10",
     "prettier": "^3.3.3",
     "typescript": "^5.5.3",
