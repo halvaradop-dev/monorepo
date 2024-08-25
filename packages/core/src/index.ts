@@ -1,5 +1,4 @@
-import { externalAsync, ReturnType } from "@halvaradop/repo-utils"
+import { externalAsync, ArgsAsyncMethod } from "@halvaradop/repo-utils"
 
-type ExternalAsyncType = ReturnType<typeof externalAsync>
-
+externalAsync()
 console.log("ExternalAsyncRequest", "ExternalType", "FixExternalFunction")

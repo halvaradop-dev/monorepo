@@ -12,8 +12,9 @@
     "moduleResolution": "Node",
     "declaration": true,
     "declarationMap": false,
-    "resolveJsonModule": true,
     "declarationDir": "dist",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["dist"]
