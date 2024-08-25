@@ -1,2 +1,3 @@
-export type { ArgsMethod, ArgsAsyncMethod, ReturnType } from "./types"
-export { externalAsync } from "./utils"
+
+export { externalAsync } from "./utils.js"
+export { ReturnType, ArgsAsyncMethod, ArgsMethod } from "./types.js"

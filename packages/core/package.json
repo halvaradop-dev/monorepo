@@ -1,6 +1,7 @@
 {
   "name": "@halvaradop/repo-core",
   "version": "1.0.0",
+  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
