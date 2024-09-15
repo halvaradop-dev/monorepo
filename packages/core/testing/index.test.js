@@ -1,5 +1,4 @@
 import { test, expect } from "vitest"
-
-test("building-actions package", () => {
+test("core package", () => {
     expect(0).toEqual(0)
 })

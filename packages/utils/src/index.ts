@@ -1,3 +1,6 @@
+export * from "./types.js"
+export * from "./declaration.js"
 
-export { externalAsync } from "./utils.js"
-export { ReturnType, ArgsAsyncMethod, ArgsMethod } from "./types.js"
+/**
+ * Entry point of the library
+ */

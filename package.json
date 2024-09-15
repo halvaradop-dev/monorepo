@@ -9,7 +9,7 @@
     "test": "vitest",
     "format": "npx prettier --write .",
     "format:check": "npx prettier --check .",
-    "build": "npm run build --workspaces"
+    "build": "pnpm build --workspaces"
   },
   "keywords": [],
   "author": "",
@@ -21,15 +21,20 @@
     "typescript": "^5.5.3",
     "vitest": "^2.0.5"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "prettier": {
     "tabWidth": 4,
     "arrowParens": "avoid",
     "printWidth": 130,
     "singleQuote": false,
     "semi": false,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "overrides": [
+      {
+        "files": ["*.json", "README.md", "*.yaml"],
+        "options": {
+          "printWidth": 80
+        }
+      }
+    ]
   }
 }

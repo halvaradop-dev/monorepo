@@ -1,4 +1,2 @@
-import { externalAsync, ArgsAsyncMethod } from "@halvaradop/repo-utils"
-
-externalAsync()
-console.log("ExternalAsyncRequest", "ExternalType", "FixExternalFunction")
+import { ArgsMethod, Params } from "@halvaradop/repo-utils"
+import { externalAsync } from "@halvaradop/repo-utils/utils"

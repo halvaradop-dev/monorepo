@@ -27,3 +27,13 @@ git push origin master :refs/tags/tag-name => elimina un tag de forma remota.
 -   Updated latest
     Stage: main
     Example: 1.0.0
+
+### How to create a branch based in a remote branch
+
+This command is useful if you have worked in a remote branch or a branch that is in another computer but this branch is in the remote repository.
+
+```bash
+git remote -a
+git checkout -b new-branch origin/name-remote-branch
+git pull origin name-remote-branch
+```
