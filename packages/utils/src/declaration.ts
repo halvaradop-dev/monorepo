@@ -3,3 +3,5 @@ export interface Params {
     url: string
     query: string
 }
+
+export type PartialParams = Partial<Params>

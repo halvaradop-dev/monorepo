@@ -9,7 +9,7 @@
     "test": "vitest",
     "format": "npx prettier --write .",
     "format:check": "npx prettier --check .",
-    "build": "pnpm build --workspaces"
+    "build": "turbo run build"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,10 @@
     "turbo": "^2.1.2",
     "typescript": "^5.5.3",
     "vitest": "^2.0.5"
+  },
+  "packageManager": "pnpm@9.0.0-rc.0",
+  "engines": {
+    "node": ">=16.0.0"
   },
   "prettier": {
     "tabWidth": 4,
@@ -37,6 +41,8 @@
           "*.yaml"
         ],
         "options": {
+          "tabWidth": 2,
+          "useTabs": false,
           "printWidth": 80
         }
       }

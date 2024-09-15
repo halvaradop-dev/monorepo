@@ -15,18 +15,18 @@ git push origin master :refs/tags/tag-name => elimina un tag de forma remota.
 
 ### Cases to create a release
 
--   First version
-    Stage: New product
-    Example: 1.0.0
--   New functionality compatible with the previous version
-    Stage: minor
-    Example: 1.1.0
--   Fix compatible with the previous version
-    Stage: patch
-    Example: 1.0.1
--   Updated latest
-    Stage: main
-    Example: 1.0.0
+- First version
+  Stage: New product
+  Example: 1.0.0
+- New functionality compatible with the previous version
+  Stage: minor
+  Example: 1.1.0
+- Fix compatible with the previous version
+  Stage: patch
+  Example: 1.0.1
+- Updated latest
+  Stage: main
+  Example: 1.0.0
 
 ### How to create a branch based in a remote branch
 
