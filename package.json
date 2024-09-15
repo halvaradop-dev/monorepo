@@ -9,7 +9,7 @@
     "test": "vitest",
     "format": "npx prettier --write .",
     "format:check": "npx prettier --check .",
-    "build": "npm run build --workspaces"
+    "build": "turbo run build"
   },
   "keywords": [],
   "author": "",
@@ -18,18 +18,34 @@
     "@halvaradop/tailwindcss-utilities": "^0.2.2",
     "@types/node": "^20.14.10",
     "prettier": "^3.3.3",
+    "turbo": "^2.1.2",
     "typescript": "^5.5.3",
     "vitest": "^2.0.5"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "packageManager": "pnpm@9.0.0-rc.0",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "prettier": {
     "tabWidth": 4,
     "arrowParens": "avoid",
     "printWidth": 130,
     "singleQuote": false,
     "semi": false,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "overrides": [
+      {
+        "files": [
+          "*.json",
+          "README.md",
+          "*.yaml"
+        ],
+        "options": {
+          "tabWidth": 2,
+          "useTabs": false,
+          "printWidth": 80
+        }
+      }
+    ]
   }
 }
