@@ -1,9 +1,1 @@
-
-type Args = (...args: any) => void
-
-/**
- * 
- */
-export const externalAsync = async (args: Args) => {
-    args()
-}
+export * from "./vite.base.config.js"

@@ -39,10 +39,18 @@
     "overrides": [
       {
         "files": [
-          "*.json",
-          "README.md",
-          "*.yaml"
+          "**/*.json",
+          "**/README.md",
+          "**/*.yaml"
         ],
+        "options": {
+          "tabWidth": 2,
+          "useTabs": false,
+          "printWidth": 80
+        }
+      },
+      {
+        "files": "**/*.json",
         "options": {
           "tabWidth": 2,
           "useTabs": false,
