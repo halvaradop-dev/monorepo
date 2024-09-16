@@ -7,9 +7,10 @@
   "type": "module",
   "scripts": {
     "test": "vitest",
-    "format": "npx prettier --write .",
-    "format:check": "npx prettier --check .",
-    "build": "turbo run build"
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build": "turbo run build",
+    "dev": "turbo run build --parallel"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "turbo": "^2.1.2",
     "typescript": "^5.5.3",
     "vite": "^5.4.5",
+    "vite-plugin-dts": "^4.2.1",
     "vitest": "^2.0.5"
   },
   "packageManager": "pnpm@9.0.0-rc.0",
