@@ -17,7 +17,8 @@
   "description": "",
   "devDependencies": {
     "@halvaradop/auth-init": "^0.0.3",
-    "@halvaradop/repo-utils": "workspace:*"
+    "@halvaradop/repo-utils": "workspace:*",
+    "@halvaradop/repo-config": "workspace:*"
   },
   "files": [
     "dist"
