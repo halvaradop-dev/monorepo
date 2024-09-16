@@ -35,6 +35,15 @@ importers:
         specifier: workspace:*
         version: link:../utils
 
+  packages/css:
+    devDependencies:
+      rollup-plugin-exclude-dependencies-from-bundle:
+        specifier: ^1.1.23
+        version: 1.1.23(rollup@4.21.3)
+      tailwind-merge:
+        specifier: ^2.5.2
+        version: 2.5.2
+
   packages/utils:
     devDependencies:
       "@halvaradop/shortify-cli":
@@ -2007,6 +2016,14 @@ packages:
       }
     engines: { iojs: ">=1.0.0", node: ">=0.10.0" }
 
+  rollup-plugin-exclude-dependencies-from-bundle@1.1.23:
+    resolution:
+      {
+        integrity: sha512-nDoFtxlpajcqaLkPftoUcHxHYFd8tydHleOVubdf2JmyQtWTbhCNK05O4VGxLr7EUKSK9KeXqbWuQXkTqeJcRg==,
+      }
+    peerDependencies:
+      rollup: "*"
+
   rollup@4.21.3:
     resolution:
       {
@@ -2171,6 +2188,12 @@ packages:
         integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==,
       }
     engines: { node: ">= 0.4" }
+
+  tailwind-merge@2.5.2:
+    resolution:
+      {
+        integrity: sha512-kjEBm+pvD+6eAwzJL2Bi+02/9LFLal1Gs61+QB7HvTfQQ0aXwC5LGT8PEt1gS0CWKktKe6ysPTAy3cBC5MeiIg==,
+      }
 
   tailwindcss@3.4.11:
     resolution:
@@ -3489,6 +3512,10 @@ snapshots:
 
   reusify@1.0.4: {}
 
+  rollup-plugin-exclude-dependencies-from-bundle@1.1.23(rollup@4.21.3):
+    dependencies:
+      rollup: 4.21.3
+
   rollup@4.21.3:
     dependencies:
       "@types/estree": 1.0.5
@@ -3585,6 +3612,8 @@ snapshots:
       ts-interface-checker: 0.1.13
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tailwind-merge@2.5.2: {}
 
   tailwindcss@3.4.11:
     dependencies:
