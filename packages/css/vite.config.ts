@@ -1,7 +1,6 @@
 import { resolve } from "path"
 import { defineConfig } from "vite"
 import dts from "vite-plugin-dts"
-import excludeFromBundle from "rollup-plugin-exclude-dependencies-from-bundle"
 
 export default defineConfig({
     plugins: [
@@ -19,13 +18,8 @@ export default defineConfig({
         outDir: "dist",
         copyPublicDir: false,
         rollupOptions: {
-            external: ["clsx", "tw-merge", "tailwindcss"],
-            plugins: [
-                excludeFromBundle({
-                    dependencies: ["clsx", "tw-merge", "tailwindcss"],
-                    peerDependencies: true,
-                }),
-            ],
+            external: ["clsx", "tw-merge", "tailwindcss", "tailwind-merge"],
+            plugins: [],
         },
     },
 })

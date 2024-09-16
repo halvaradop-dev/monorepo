@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "dev": "tsc -w",
+    "dev": "vite",
     "build": "vite build",
     "start": "node dist/index.js",
     "test": "pnpm start"
@@ -14,7 +14,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
     "tailwind-merge": "^2.5.2"
   },
   "files": [
@@ -25,7 +24,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.jcs"
-    },
-    "./"
+    }
   }
 }
