@@ -1,12 +1,22 @@
 {
-    "name": "@halvaradop/repo-config",
-    "version": "0.1.0",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "src",
-        "tsconfig.base.json",
-        "vite.base.config.ts"
-    ]
+  "name": "@halvaradop/repo-config",
+  "version": "0.1.0",
+  "description": "Shared configuration for the monorepo",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "tsconfig.base.json",
+    "vite.base.config.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./tsconfig.base.json": "./tsconfig.base.json"
+  },
+  "author": ""
 }

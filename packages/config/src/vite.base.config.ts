@@ -1,8 +1,8 @@
 import { resolve } from "path"
-import { defineConfig } from "vite"
+import { UserConfig } from "vite"
 import dts from "vite-plugin-dts"
 
-export default defineConfig({
+export const viteDefaultConfig: UserConfig = {
     plugins: [
         dts({
             outDir: "dist",
@@ -11,15 +11,14 @@ export default defineConfig({
     ],
     build: {
         lib: {
-            entry: resolve(__dirname, "src/index.ts"),
-            formats: ["cjs", "es"],
+            entry: resolve("src/index.ts"),
+            formats: ["es", "cjs"],
             fileName: "index",
         },
         outDir: "dist",
         copyPublicDir: false,
         rollupOptions: {
-            external: ["clsx", "tw-merge", "tailwindcss", "tailwind-merge"],
-            plugins: [],
+            external: ["tailwind-merge", "tailwindcss", "postcss", "react", "react-dom"],
         },
     },
-})
+}

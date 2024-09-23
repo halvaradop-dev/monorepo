@@ -4,7 +4,7 @@ export default defineConfig({
     ...config,
     build: {
         lib: {
-            entry: "src/index.ts"
-        }
-    }
+            entry: "src/index.ts",
+        },
+    },
 })
