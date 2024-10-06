@@ -5,8 +5,10 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch"
+    "dev:tsup": "tsup -w",
+    "dev:vite": "vite",
+    "build:tsup": "tsup",
+    "build:vite": "vite build"
   },
   "keywords": [],
   "author": "",
