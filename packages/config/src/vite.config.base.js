@@ -1,8 +1,11 @@
 import { resolve } from "path"
-import { UserConfig } from "vite"
 import dts from "vite-plugin-dts"
 
-export const viteDefaultConfig: UserConfig = {
+/**
+ * Default Vite configuration
+ * @type {import("vite").UserConfig}
+ */
+export const config = {
     plugins: [
         dts({
             outDir: "dist",

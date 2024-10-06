@@ -9,8 +9,9 @@
     "test": "vitest",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "build": "turbo run build",
-    "dev": "turbo run build --parallel"
+    "build:tsup": "turbo build:tsup",
+    "build:vite": "turbo build:vite",
+    "dev": "turbo build --parallel"
   },
   "keywords": [],
   "author": "",

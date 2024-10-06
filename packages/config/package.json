@@ -7,16 +7,15 @@
   "scripts": {
     "build": "tsc"
   },
-  "files": [
-    "tsconfig.base.json",
-    "vite.base.config.ts"
-  ],
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+    "./tsup.config": {
+      "types": "./dist/tsup.config.base.d.ts",
+      "import": "./dist/tsup.config.base.js"
     },
-    "./tsconfig.base.json": "./tsconfig.base.json"
-  },
-  "author": ""
+    "./vite.config.base": {
+      "types": "./dist/vite.config.base.d.ts",
+      "import": "./dist/vite.config.base.js"
+    },
+    "./tsconfig.base": "./tsconfig.base.json"
+  }
 }

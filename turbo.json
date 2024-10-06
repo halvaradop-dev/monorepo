@@ -1,14 +1,20 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build:vite": {
+      "cache": true,
+      "dependsOn": ["^build:vite"],
+      "inputs": ["src"],
+      "outputs": ["dist"]
+    },
+    "build:tsup": {
+      "cache": true,
+      "dependsOn": ["^build:tsup"],
+      "inputs": ["src"],
+      "outputs": ["dist"]
+    }
+  },
   "globalDependencies": ["tsconfig.json"],
   "ui": "tui",
-  "cacheDir": ".turbo/cache",
-  "tasks": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**/*"],
-      "inputs": ["packages/**/src/**/*.ts"],
-      "cache": true
-    }
-  }
+  "cacheDir": ".turbo/cache"
 }

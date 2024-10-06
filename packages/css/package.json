@@ -4,10 +4,11 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "node dist/index.js",
-    "test": "pnpm start"
+    "dev:tsup": "tsup -w",
+    "dev:vite": "vite",
+    "build:tsup": "tsup",
+    "build:vite": "vite build",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
