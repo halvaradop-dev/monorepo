@@ -13,7 +13,9 @@
     "build:tsup": "tsup",
     "build:vite": "vite build",
     "build:all": "pnpm build:tsup && pnpm build:vite",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test": "vitest --run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",

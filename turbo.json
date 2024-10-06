@@ -18,9 +18,16 @@
       "dependsOn": ["^build:all"],
       "inputs": ["src"],
       "outputs": ["dist"]
+    },
+    "test": {
+      "cache": false,
+      "inputs": ["test"]
+    },
+    "test:watch": {
+      "cache": false,
+      "persistent": true,
+      "inputs": ["test"]
     }
   },
-  "globalDependencies": ["tsconfig.json"],
-  "ui": "tui",
   "cacheDir": ".turbo/cache"
 }
