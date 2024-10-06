@@ -3,25 +3,26 @@ import dts from "vite-plugin-dts"
 
 /**
  * Default Vite configuration
- * @type {import("vite").UserConfig}
+ * @returns {import("vite").UserConfig}
  */
-export const config = {
+export const configVite = (entry = "src/index.ts") => ({
     plugins: [
         dts({
-            outDir: "dist",
+            outDir: "dist/vite",
             tsconfigPath: "./tsconfig.json",
         }),
     ],
     build: {
         lib: {
-            entry: resolve("src/index.ts"),
+            entry: resolve(entry),
             formats: ["es", "cjs"],
             fileName: "index",
         },
-        outDir: "dist",
+        outDir: "dist/vite",
         copyPublicDir: false,
         rollupOptions: {
-            external: ["tailwind-merge", "tailwindcss", "postcss", "react", "react-dom"],
+            external: ["tailwind-merge", "tailwindcss", "postcss"],
+            //input: resolve("src/tsup.config.base.js")
         },
     },
-}
+})

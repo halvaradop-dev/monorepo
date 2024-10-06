@@ -3,11 +3,11 @@
  *
  * @type {import("tsup").Options}
  */
-export const config = {
+export const configTsup = {
     entry: ["src"],
     clean: true,
     dts: true,
-    outDir: "dist",
+    outDir: "dist/tsup",
     external: ["tailwindcss", "vite"],
     format: ["esm", "cjs"],
     minify: true,

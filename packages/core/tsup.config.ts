@@ -1,4 +1,4 @@
 import { defineConfig } from "tsup"
-import { config } from "@halvaradop/repo-config/tsup.config"
+import { configTsup } from "@halvaradop/repo-config/tsup.config.base"
 
-export default defineConfig(config)
+export default defineConfig(configTsup)

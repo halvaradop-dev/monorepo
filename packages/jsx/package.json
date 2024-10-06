@@ -5,10 +5,14 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "dev": "tsc -w",
     "dev:tsup": "tsup -w",
     "dev:vite": "vite",
+    "build": "tsc",
     "build:tsup": "tsup",
-    "build:vite": "vite build"
+    "build:vite": "vite build",
+    "build:all": "pnpm build:tsup && pnpm build:vite",
+    "clean": "rm -rf dist"
   },
   "keywords": [],
   "author": "",
@@ -19,11 +23,24 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "types": "./dist/tsup/index.d.ts",
+      "import": "./dist/tsup/index.js",
+      "require": "./dist/tsup/index.cjs"
+    },
+    "./tsup": {
+      "types": "./dist/tsup/index.d.ts",
+      "import": "./dist/tsup/index.js",
+      "require": "./dist/tsup/index.cjs"
+    },
+    "./vite": {
+      "types": "./dist/vite/index.d.ts",
+      "import": "./dist/vite/index.js",
+      "require": "./dist/vite/index.cjs"
     }
   }
 }

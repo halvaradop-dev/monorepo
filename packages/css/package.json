@@ -4,11 +4,14 @@
   "private": false,
   "type": "module",
   "scripts": {
+    "dev": "tsc -w",
     "dev:tsup": "tsup -w",
     "dev:vite": "vite",
+    "build": "tsc",
     "build:tsup": "tsup",
     "build:vite": "vite build",
-    "start": "node dist/index.js"
+    "build:all": "pnpm build:tsup && pnpm build:vite",
+    "clean": "rm -rf dist"
   },
   "keywords": [],
   "author": "",
@@ -23,9 +26,19 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.jcs"
+      "types": "./dist/tsup/index.d.ts",
+      "import": "./dist/tsup/index.js",
+      "require": "./dist/tsup/index.jcs"
+    },
+    "./tsup": {
+      "types": "./dist/tsup/index.d.ts",
+      "import": "./dist/tsup/index.js",
+      "require": "./dist/tsup/index.jcs"
+    },
+    "./vite": {
+      "types": "./dist/vite/index.d.ts",
+      "import": "./dist/vite/index.js",
+      "require": "./dist/vite/index.jcs"
     }
   }
 }

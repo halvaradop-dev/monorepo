@@ -12,6 +12,12 @@
       "dependsOn": ["^build:tsup"],
       "inputs": ["src"],
       "outputs": ["dist"]
+    },
+    "build:all": {
+      "cache": true,
+      "dependsOn": ["^build:all"],
+      "inputs": ["src"],
+      "outputs": ["dist"]
     }
   },
   "globalDependencies": ["tsconfig.json"],
