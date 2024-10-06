@@ -7,9 +7,13 @@
   "type": "module",
   "scripts": {
     "dev": "tsc -w",
+    "dev:tsup": "tsup -w",
+    "dev:vite": "vite",
     "build": "tsc",
-    "start": "node dist/index.js",
-    "test": "pnpm start"
+    "build:tsup": "tsup",
+    "build:vite": "vite build",
+    "build:all": "pnpm build:tsup && pnpm build:vite",
+    "clean": "rm -rf dist"
   },
   "keywords": [],
   "author": "",
@@ -17,10 +21,26 @@
   "description": "",
   "devDependencies": {
     "@halvaradop/auth-init": "^0.0.3",
-    "@halvaradop/repo-utils": "workspace:*",
     "@halvaradop/repo-config": "workspace:*"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/tsup/index.d.ts",
+      "import": "./dist/tsup/index.js",
+      "require": "./dist/tsup/index.cjs"
+    },
+    "./tsup": {
+      "types": "./dist/tsup/index.d.ts",
+      "import": "./dist/tsup/index.js",
+      "require": "./dist/tsup/index.cjs"
+    },
+    "./vite": {
+      "types": "./dist/vite/index.d.ts",
+      "import": "./dist/vite/index.js",
+      "require": "./dist/vite/index.cjs"
+    }
+  }
 }

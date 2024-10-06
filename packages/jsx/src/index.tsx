@@ -1,9 +1,7 @@
-
-export const JSXComponente = () => {
-
+export const JSXComponent = () => {
     return (
         <div>
-            <p>Testing</p>            
+            <p>JSXComponent</p>
         </div>
     )
 }

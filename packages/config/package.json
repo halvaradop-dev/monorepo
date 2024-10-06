@@ -5,18 +5,21 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rm -rf dist"
   },
   "files": [
-    "tsconfig.base.json",
-    "vite.base.config.ts"
+    "dist"
   ],
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./tsup.config.base": {
+      "types": "./dist/tsup.config.base.d.ts",
+      "import": "./dist/tsup.config.base.js"
     },
-    "./tsconfig.base.json": "./tsconfig.base.json"
-  },
-  "author": ""
+    "./vite.config.base": {
+      "types": "./dist/vite.config.base.d.ts",
+      "import": "./dist/vite.config.base.js"
+    }
+  }
 }

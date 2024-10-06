@@ -1,16 +1,20 @@
 {
-  "name": "repo",
+  "name": "@halvaradop/monorepo",
   "version": "0.0.0",
   "private": true,
-  "description": "",
-  "main": "index.js",
+  "description": "A monorepo setup for managing multiple packages with shared configurations and dependencies.",
   "type": "module",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest --run",
+    "test:watch": "vitest",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "build": "turbo run build",
-    "dev": "turbo run build --parallel"
+    "build": "pnpm --filter=@halvaradop/repo-config run build",
+    "build:tsup": "turbo build:tsup --parallel",
+    "build:vite": "turbo build:vite --parallel",
+    "build:all": "pnpm build && turbo build:all --parallel",
+    "dev": "turbo build --parallel",
+    "clean": "pnpm -r exec pnpm clean"
   },
   "keywords": [],
   "author": "",
