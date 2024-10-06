@@ -17,7 +17,8 @@
     "test:coverage": "vitest --coverage",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "clean": "pnpm -r exec pnpm clean"
+    "clean": "pnpm -r exec pnpm clean",
+    "clean:modules": "pnpm -r exec rm -rf node_modules"
   },
   "keywords": [],
   "author": "",
@@ -34,7 +35,7 @@
     "vite-plugin-dts": "^4.2.1",
     "vitest": "^2.0.5"
   },
-  "packageManager": "pnpm@9.0.0-rc.0",
+  "packageManager": "pnpm@9.12.0",
   "engines": {
     "node": ">=16.0.0"
   },

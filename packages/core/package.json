@@ -20,7 +20,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@halvaradop/auth-init": "^0.0.3",
     "@halvaradop/repo-config": "workspace:*"
   },
   "files": [

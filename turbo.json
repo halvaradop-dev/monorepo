@@ -2,19 +2,19 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "build:vite": {
-      "cache": true,
+      "cache": false,
       "dependsOn": ["^build:vite"],
       "inputs": ["src"],
       "outputs": ["dist"]
     },
     "build:tsup": {
-      "cache": true,
+      "cache": false,
       "dependsOn": ["^build:tsup"],
       "inputs": ["src"],
       "outputs": ["dist"]
     },
     "build:all": {
-      "cache": true,
+      "cache": false,
       "dependsOn": ["^build:all"],
       "inputs": ["src"],
       "outputs": ["dist"]
