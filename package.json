@@ -5,16 +5,20 @@
   "description": "A monorepo setup for managing multiple packages with shared configurations and dependencies.",
   "type": "module",
   "scripts": {
-    "test": "vitest --run",
-    "test:watch": "vitest",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "dev": "turbo dev --parallel",
+    "dev:tsup": "turbo dev:tsup --parallel",
+    "dev:vite": "turbo dev:vite --parallel",
     "build": "pnpm --filter=@halvaradop/repo-config run build",
     "build:tsup": "turbo build:tsup --parallel",
     "build:vite": "turbo build:vite --parallel",
     "build:all": "pnpm build && turbo build:all --parallel",
-    "dev": "turbo build --parallel",
-    "clean": "pnpm -r exec pnpm clean"
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
+    "test:coverage": "vitest --coverage",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "pnpm -r exec pnpm clean",
+    "clean:modules": "pnpm -r exec rm -rf node_modules"
   },
   "keywords": [],
   "author": "",
@@ -22,15 +26,16 @@
   "devDependencies": {
     "@halvaradop/tailwindcss-utilities": "^0.2.2",
     "@types/node": "^20.14.10",
+    "@vitest/coverage-v8": "^2.1.2",
     "prettier": "^3.3.3",
     "tsup": "^8.2.4",
-    "turbo": "^2.1.2",
+    "turbo": "^2.1.3",
     "typescript": "^5.5.3",
     "vite": "^5.4.5",
     "vite-plugin-dts": "^4.2.1",
     "vitest": "^2.0.5"
   },
-  "packageManager": "pnpm@9.0.0-rc.0",
+  "packageManager": "pnpm@9.12.0",
   "engines": {
     "node": ">=16.0.0"
   },

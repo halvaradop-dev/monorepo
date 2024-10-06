@@ -5,7 +5,7 @@ import dts from "vite-plugin-dts"
  * Default Vite configuration
  * @returns {import("vite").UserConfig}
  */
-export const configVite = (entry = "src/index.ts") => ({
+export const configVite = (entry = "src/index.ts", inputRollup = "src/index.ts") => ({
     plugins: [
         dts({
             outDir: "dist/vite",
@@ -22,7 +22,7 @@ export const configVite = (entry = "src/index.ts") => ({
         copyPublicDir: false,
         rollupOptions: {
             external: ["tailwind-merge", "tailwindcss", "postcss"],
-            //input: resolve("src/tsup.config.base.js")
+            input: resolve(inputRollup),
         },
     },
 })

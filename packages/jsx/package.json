@@ -2,7 +2,6 @@
   "name": "@halvaradop/repo-jsx",
   "version": "0.6.0",
   "private": false,
-  "description": "",
   "type": "module",
   "scripts": {
     "dev": "tsc -w",
@@ -12,7 +11,9 @@
     "build:tsup": "tsup",
     "build:vite": "vite build",
     "build:all": "pnpm build:tsup && pnpm build:vite",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test": "vitest --run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",

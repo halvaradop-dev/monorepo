@@ -2,8 +2,6 @@
   "name": "@halvaradop/repo-core",
   "version": "1.0.0",
   "private": false,
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "dev": "tsc -w",
@@ -13,14 +11,15 @@
     "build:tsup": "tsup",
     "build:vite": "vite build",
     "build:all": "pnpm build:tsup && pnpm build:vite",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test": "vitest --run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@halvaradop/auth-init": "^0.0.3",
     "@halvaradop/repo-config": "workspace:*"
   },
   "files": [

@@ -4,4 +4,5 @@ node_modules
 # Configuration files
 package.json
 package-lock.json
+pnpm-lock.yaml
 tsconfig.json
