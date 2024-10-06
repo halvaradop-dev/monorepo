@@ -27,6 +27,15 @@
       "cache": false,
       "persistent": true,
       "inputs": ["test"]
+    },
+    "dev": {
+      "cache": false
+    },
+    "dev:tsup": {
+      "cache": false
+    },
+    "dev:vite": {
+      "cache": false
     }
   },
   "cacheDir": ".turbo/cache"
