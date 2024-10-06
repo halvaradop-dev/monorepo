@@ -1,6 +1,6 @@
 /**
  * Default tsup configuration
- * 
+ *
  * @type {import("tsup").Options}
  */
 export const config = {
