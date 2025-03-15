@@ -4,7 +4,7 @@
 
 /**
  *
- *
+ * Error
  */
 export const JSXComponent = () => {
     return (

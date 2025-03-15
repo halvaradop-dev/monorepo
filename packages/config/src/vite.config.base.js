@@ -2,6 +2,7 @@ import { resolve } from "path"
 import dts from "vite-plugin-dts"
 
 /**
+ * Exports the default Vite configuration
  * Default Vite configuration
  * @returns {import("vite").UserConfig}
  */
