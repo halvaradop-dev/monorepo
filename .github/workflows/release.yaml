@@ -44,4 +44,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: ./scripts/releaser.sh
+      - run: ls -la
+
+      - name: Set permissions for the script
+        run: chmod +x ./scripts/releaser.sh
+
+      - name: Execute deployment script
+        shell: bash
+        run: ./scripts/releaser.sh
